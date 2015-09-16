@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Reservas.ApiService.Models
 {
-    public class Sala
+    public class Company
     {
         public Guid Id { get; set; }
 
@@ -17,10 +17,14 @@ namespace Reservas.ApiService.Models
 
         public string OwnerName { get; set; }
 
-        public int Rooms { get; set; }
+        public int RoomsQuantity { get; set; }
 
         public string Address { get; set; }
 
         public GeoCoordinate Location { get; set; }
+
+        public List<Room> Rooms { get;  set; }
+
+
     }
 }

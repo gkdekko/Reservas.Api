@@ -226,7 +226,8 @@
     <Compile Include="Models\Helpers\Categories.cs" />
     <Compile Include="Models\Helpers\GeoCoordinate.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
-    <Compile Include="Models\Sala.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Room.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

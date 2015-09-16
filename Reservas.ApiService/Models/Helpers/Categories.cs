@@ -12,6 +12,11 @@ namespace Reservas.ApiService.Models.Helpers
 
         public string Name { get; set; }
 
+        public Byte Calification { get; set; }
 
+        public Categories()
+        {
+            
+        }
     }
 }

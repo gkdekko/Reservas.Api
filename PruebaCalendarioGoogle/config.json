@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "PruebaCalendarioGoogle"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-PruebaCalendarioGoogle-d0f8d8f5-000d-4955-b1c0-5abf6f829db0;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
