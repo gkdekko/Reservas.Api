@@ -6,6 +6,7 @@ using System.Web.Http.OData;
 using Microsoft.WindowsAzure.Mobile.Service;
 using Reservas.ApiService.DataObjects;
 using Reservas.ApiService.Models;
+using Reservas.ApiService.Models.Helpers;
 
 namespace Reservas.ApiService.Controllers
 {
@@ -21,6 +22,8 @@ namespace Reservas.ApiService.Controllers
         // GET tables/TodoItem
         public IQueryable<TodoItem> GetAllTodoItems()
         {
+            Example ejemplo = new Example();
+            var lista = ejemplo.Main();
             return Query();
         }
 
