@@ -16,7 +16,7 @@ namespace Reservas.ApiService.Models.Helpers
     public class Example
     {
         static string[] Scopes = { CalendarService.Scope.CalendarReadonly };
-        static string ApplicationName = "Google Calendar API Quickstart";
+        static string ApplicationName = "Stereo Web Api";
 
         public List<string> Main()
         {
@@ -52,7 +52,11 @@ namespace Reservas.ApiService.Models.Helpers
             request.SingleEvents = true;
             request.MaxResults = 10;
             request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
-
+            
+            CalendarList listaCalendarios = new CalendarList();
+            Calendar calendario = new Calendar();
+            var t = service.CalendarList.List();
+            var des = t.Execute();
             // List events.
             
             Events events = request.Execute();
